@@ -1,0 +1,31 @@
+.films-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 190px 190px 190px 190px;
+    gap: 5px;
+  }
+  .film-list_item {
+    display: grid;
+    grid-template-rows: auto;
+    border: 1px solid rgb(92, 91, 91);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(227, 217, 217);
+  }
+  .films-list_item-img {
+    width: 180px;
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .films-list_item-title {
+    margin-bottom: 15px;    
+    padding: 0 10px;
+  }
+  .films-list_item-year {
+    padding: 0 10px 10px;
+  }
+  .films-list_spin {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }

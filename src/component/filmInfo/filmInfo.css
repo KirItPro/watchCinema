@@ -1,0 +1,38 @@
+.film-info {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.film-left-part {
+    height: 50vh;
+    min-width: 60vw;
+    margin: auto 0;
+    padding: 10px;
+    color: rgb(228, 231, 234);
+    background: linear-gradient(to right,  rgba(56, 55, 55, 0.749) 50%, rgba(68, 68, 68, 0) 90%);
+}
+.film-rating {
+    margin-bottom: 10px;
+}
+.film-genres {    
+    margin-bottom: 30px;
+}
+.film-btn-download {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    background-color: rgba(233, 25, 25, 0.896);
+    color: rgb(240, 240, 240);
+    border-radius: 5px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+}
+.film-poster {
+    width: 20vw;
+    margin: auto 30px auto 0;
+}

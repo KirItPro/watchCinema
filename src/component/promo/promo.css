@@ -1,0 +1,21 @@
+.promo {
+  height: 400px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-image: url('../../images/promo.jpg');
+  background-position: top;
+  background-size:cover ;
+  background-repeat: no-repeat;
+  -webkit-mask-image:-webkit-linear-gradient(center, rgba(0,0,0,1) 0%,rgba(0, 0, 0, 0.561) 0%,rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0, 0, 0, 0.552) 90%, rgba(0,0,0,0) 100%);
+}
+.promo-title {
+  margin: 0 0 20px ;
+  text-shadow: 2px 1px 1px rgb(255, 255, 255);
+  font-size: 130px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(143, 143, 143);
+  text-transform: uppercase;
+}

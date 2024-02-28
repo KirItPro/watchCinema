@@ -1,0 +1,10 @@
+.btn {
+    margin: auto 20px 10px;
+    border-radius: 5px;
+}
+.btn--enable {
+    background: rgb(73, 51, 121);
+}
+.btn--disable {
+    background: rgb(109, 106, 106);
+}
