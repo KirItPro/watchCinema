@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../button/button';
-import { setItemInCart, deletedItemFromCart } from '../../redux/favorites/reducer';
+import { setItemInFavorites, deletedItemFromFavorites } from '../../redux/favorites/reducer';
 
-export default function FilmCard({ dataFilm }) {
+export default function FilmFavorites({ dataFilm }) {
     const data = dataFilm;
     const dispatch = useDispatch();
-    const items = useSelector(state => state.cart.itemsInCart);
+    const items = useSelector(state => state.favorites.itemsInFavorites);
     const isItemInFavorites = items.some(item => item.id === dataFilm.id);
 
     const handleClick = (e) => {
         e.stopPropagation();
         if (isItemInFavorites) {
-            dispatch(deletedItemFromCart(data.id));
+            dispatch(deletedItemFromFavorites(data.id));
         } else {
-            dispatch(setItemInCart(data));
+            dispatch(setItemInFavorites(data));
         }
     }
     return (

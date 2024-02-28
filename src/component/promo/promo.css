@@ -14,8 +14,16 @@
 .promo-title {
   margin: 0 0 20px ;
   text-shadow: 2px 1px 1px rgb(255, 255, 255);
-  font-size: 130px;
+  font-size: 110px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: rgb(143, 143, 143);
   text-transform: uppercase;
+}
+.promo-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  z-index: -1;
+  object-fit: cover;
 }

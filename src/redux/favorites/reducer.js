@@ -1,19 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const cartSlice = createSlice({
-    name: 'cart',
+const favoriteSlice = createSlice({
+    name: 'favorites',
     initialState: {
-        itemsInCart: []
+        itemsInFavorites: []
     },
     reducers: {
-        setItemInCart: (state, action) => {
-            state.itemsInCart.push(action.payload);
+        setItemInFavorites: (state, action) => {
+            state.itemsInFavorites.push(action.payload);
         },
-        deletedItemFromCart: (state, action) => {
-            state.itemsInCart = state.itemsInCart.filter(cart => cart.id !== action.payload)
+        deletedItemFromFavorites: (state, action) => {
+            state.itemsInFavorites = state.itemsInFavorites.filter(film => film.id !== action.payload)
         }
     }
 });
 
-export const {setItemInCart, deletedItemFromCart} = cartSlice.actions;
-export default cartSlice.reducer;
+export const {setItemInFavorites, deletedItemFromFavorites} = favoriteSlice.actions;
+export default favoriteSlice.reducer;

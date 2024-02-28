@@ -13,6 +13,14 @@
   gap: 10px;
 }
 .header-menu_button {
+  display: flex;
   text-decoration: none;
   color: rgb(227, 217, 217);
+}
+.header-menu_button__count {
+  max-width: 30px;
+  margin: 0 2px;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
 }
