@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,500;0,900;1,800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.film {
+    display: grid;
+    justify-content: center;
+}
 .film-info {
     height: 90vh;
     display: flex;
@@ -8,7 +14,7 @@
 }
 .film-left-part {
     height: 50vh;
-    min-width: 60vw;
+    min-width: 55vw;
     margin: auto 0;
     padding: 10px;
     color: rgb(228, 231, 234);
@@ -19,9 +25,6 @@
 }
 .film-genres {    
     margin-bottom: 30px;
-}
-.film-play {
-    
 }
 .film-btn-download {
     padding: 5px;
@@ -38,4 +41,17 @@
 .film-poster {
     width: 20vw;
     margin: auto 30px auto 0;
+}
+.filv-video_title {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: rgb(234, 225, 225);
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+}
+.film-play {
+    position: relative;
+    margin: 0 auto;
 }

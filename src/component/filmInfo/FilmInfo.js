@@ -1,25 +1,39 @@
 import './filmInfo.css';
+import ReactPlayer from 'react-player/youtube';
 import { useLocation } from 'react-router-dom'
 import { Link } from 'react-router-dom';
+
+const TRAILER = 'https://www.youtube.com/watch?v=R0MG5_wfRmQ';
 
 function FilmInfo() {
     const location = useLocation();
     const film = location.state;
     return (
-        <div className="film-info" 
-            style={{backgroundImage:`url(${film.background_image_original})`, 
-                backgroundColor: 'gray'}}>
-            <div className="film-left-part">
-                <h2>{film.title_long}</h2>
-                <p className="film-synopsis">{film.synopsis}</p>
-                <div className="film-rating">{'Рейтинг: ' + film.rating}</div>
-                <div className="film-genres">{'Жанр: ' + film.genres.join(', ')}</div>
-                <div className="film-play">смотреть</div>
-                <Link className="film-btn-download" to={film.torrents[1].url} >СКАЧАТЬ</Link>
+        <div className="film">
+            <div className="film-info"
+                style={{
+                    backgroundImage: `url(${film.background_image_original})`,
+                    backgroundColor: 'gray'
+                }}>
+                <div className="film-left-part">
+                    <h2>{film.title_long}</h2>
+                    <p className="film-synopsis">{film.synopsis.length > 600 ? film.synopsis.slice(0, 600)+' ...' : film.synopsis}</p>
+                    <div className="film-rating">{'Рейтинг: ' + film.rating}</div>
+                    <div className="film-genres">{'Жанр: ' + film.genres.join(', ')}</div>
+                    {/* <div >смотреть</div> */}
+                    <Link className="film-btn-download" to={film.torrents[1].url} >СКАЧАТЬ</Link>
+                </div>
+                <img className="film-poster" src={film.medium_cover_image} alt='poster' />
             </div>
-            <img className="film-poster" src={film.medium_cover_image} alt='poster'/>
+            <h3 className="filv-video_title">смотреть</h3>
+            <ReactPlayer
+                className="film-play"
+                controls={true}
+                width='900px'
+                height='570px'
+                url={TRAILER} 
+            />
         </div>
-
     )
 };
 
