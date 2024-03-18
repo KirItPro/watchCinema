@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/watchCinema/static/css/main.9d6848c6.css",
+    "main.js": "/watchCinema/static/js/main.7b535487.js",
+    "reactPlayerPreview.js": "/watchCinema/static/js/reactPlayerPreview.33df7acd.chunk.js",
+    "static/media/bg-video.mp4": "/watchCinema/static/media/bg-video.09e229b95378ac99dbc6.mp4",
+    "static/media/promo.jpg": "/watchCinema/static/media/promo.815ede481c0f179a2c58.jpg",
+    "static/media/spin.png": "/watchCinema/static/media/spin.7d3f1dae3f0a12f826fa.png",
+    "index.html": "/watchCinema/index.html",
+    "main.9d6848c6.css.map": "/watchCinema/static/css/main.9d6848c6.css.map",
+    "main.7b535487.js.map": "/watchCinema/static/js/main.7b535487.js.map",
+    "reactPlayerPreview.33df7acd.chunk.js.map": "/watchCinema/static/js/reactPlayerPreview.33df7acd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d6848c6.css",
+    "static/js/main.7b535487.js"
+  ]
+}
