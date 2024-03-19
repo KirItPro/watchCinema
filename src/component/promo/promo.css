@@ -27,3 +27,11 @@
   z-index: -1;
   object-fit: cover;
 }
+@media (max-width: 810px) {
+  .promo-title {
+    font-size: 12vw;  
+  }
+  .promo {
+    height: 40vw;
+  }
+}

@@ -24,8 +24,33 @@
   .films-list_item-year {
     padding: 0 10px 10px;
   }
-  .films-list_spin {
+  .films-text_spin {
+    color: rgb(227, 217, 217);
+  }
+  .films-spin {
     display: grid;
-    justify-content: center;
+    margin-top: 20%;
+    justify-items: center;
     align-items: center;
+  }
+  @media (max-width: 810px) {
+    .films-list {
+      grid-template-columns: 190px 190px 190px;
+    }
+  }
+  @media (max-width: 610px) {
+    .films-list {
+      grid-template-columns: 190px 190px;
+    }    
+    .films-list_item-title {
+      margin-bottom: 5px; 
+    }
+  }
+  @media (max-width: 410px) {
+    .films-list_item-img {
+      width: 140px;
+    }
+    .films-list {
+      grid-template-columns: 150px 150px;
+    }
   }

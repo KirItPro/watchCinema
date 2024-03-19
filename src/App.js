@@ -17,6 +17,7 @@ function App() {
     axios.get(dataURL)
     .then(responce => {
       setMovies(responce.data.data.movies);
+      // console.log(responce.data.data.movies)
     })
     .catch((error) => {
       console.log('Error happened here!')

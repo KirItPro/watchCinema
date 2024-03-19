@@ -14,7 +14,8 @@
 }
 .header-menu_button {
   display: flex;
-  text-decoration: none;
+  text-decoration: none;  
+  align-items: center;
   color: rgb(227, 217, 217);
 }
 .header-menu_button__count {
@@ -23,4 +24,15 @@
   white-space: nowrap; 
   overflow: hidden; 
   text-overflow: ellipsis; 
+}
+.login_button {
+  padding: 0 3px 2px 2px;
+  color: rgb(182, 147, 52);
+  border: 1px solid rgb(182, 147, 52);
+  border-radius: 3px;
+}
+@media (max-width: 360px) {
+  .header-menu_button {
+    font-size: 12px;
+  }
 }

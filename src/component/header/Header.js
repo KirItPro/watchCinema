@@ -11,7 +11,7 @@ export default function Header() {
             <Link to='/' className="header-menu_button">Главная</Link>
             <Link to='/all-films' className="header-menu_button">Фильмы</Link>
             <Link to='/favorites' className="header-menu_button">Избранное(<div className='header-menu_button__count'>{items.length}</div>)</Link>
-            <Link to='/login' className="header-menu_button" style={{color:'yellow', margin:'0 20px'}}>Вход</Link>
+            <Link to='/login' className="header-menu_button login_button" >Вход</Link>
             </div>
         </header>
     )

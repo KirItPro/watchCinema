@@ -38,7 +38,7 @@ const Login = () => {
         />
       </div>
       <div className="login-form_control">
-        <label htmlFor="password">Password:</label>
+        <label htmlFor="password">Пароль:</label>
         <input
           type="password"
           id="password"

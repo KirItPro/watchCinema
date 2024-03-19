@@ -18,7 +18,7 @@ export default function Promo() {
                 playing={true}
                 url={TRAILER} 
             />
-            <h1 className="promo-title">смотри кино</h1>
+            <h1 className="promo-title">смотри.кино</h1>
         </div>
     )
 };

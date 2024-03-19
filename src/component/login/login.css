@@ -2,6 +2,7 @@ form {
     display: grid;
     justify-items: center;
     align-items: center;
+    padding-top: 20%;
     gap: 10px;
     color: rgb(202, 197, 197);
 }

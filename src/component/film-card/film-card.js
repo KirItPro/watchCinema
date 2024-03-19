@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Button } from '../button/button';
 import { setItemInFavorites, deletedItemFromFavorites } from '../../redux/favorites/reducer';
-
+import './film-card.css';
 export default function FilmFavorites({ dataFilm }) {
     const data = dataFilm;
     const dispatch = useDispatch();
