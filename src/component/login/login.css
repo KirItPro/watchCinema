@@ -1,0 +1,18 @@
+form {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(202, 197, 197);
+}
+.login-user_email {
+    color: rgb(182, 87, 14);
+}
+input{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: rgba(237, 240, 243, 0.878);
+}
+.login-btn {
+    width: 60px;
+}

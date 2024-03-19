@@ -20,7 +20,6 @@ function FilmInfo() {
                     <p className="film-synopsis">{film.synopsis.length > 600 ? film.synopsis.slice(0, 600)+' ...' : film.synopsis}</p>
                     <div className="film-rating">{'Рейтинг: ' + film.rating}</div>
                     <div className="film-genres">{'Жанр: ' + film.genres.join(', ')}</div>
-                    {/* <div >смотреть</div> */}
                     <Link className="film-btn-download" to={film.torrents[1].url} >СКАЧАТЬ</Link>
                 </div>
                 <img className="film-poster" src={film.medium_cover_image} alt='poster' />

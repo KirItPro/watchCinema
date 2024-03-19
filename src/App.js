@@ -7,6 +7,7 @@ import Promo from './component/promo/Promo';
 import Home from './component/Home/Home';
 import FavoritesBlock from './component/favorites-block/favorites';
 import FilmInfo from './component/filmInfo/FilmInfo';
+import Login from './component/login/login';
 
 function App() {
   const dataURL = 'https://yts.mx/api/v2/list_movies.json';  
@@ -31,6 +32,7 @@ function App() {
         <Route path='/all-films' element={<FilmsAll dataAllFilms={dataMovies}/>}/> 
         <Route path='/film-info' element={<FilmInfo/>} />
         <Route path='/favorites' element={<FavoritesBlock/>}/>
+        <Route path='/login' element={<Login/>} />
       </Routes>
     </>
   );
