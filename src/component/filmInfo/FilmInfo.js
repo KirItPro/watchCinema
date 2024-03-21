@@ -24,7 +24,7 @@ function FilmInfo() {
                 </div>
                 <img className="film-poster" src={film.medium_cover_image} alt='poster' />
             </div>
-            <h3 className="filv-video_title">смотреть</h3>
+            <h3 className="filv-video_title">Смотреть</h3>
             <ReactPlayer
                 className="film-play"
                 controls={true}
