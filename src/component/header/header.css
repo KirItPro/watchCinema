@@ -18,6 +18,10 @@
   align-items: center;
   color: rgb(227, 217, 217);
 }
+.header-menu_button:hover {
+  text-shadow: 0px 0px 10px #4434f79c; 
+  transform: scale(1.1) ;
+}
 .header-menu_button__count {
   max-width: 30px;
   margin: 0 2px;

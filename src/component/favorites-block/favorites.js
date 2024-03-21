@@ -5,7 +5,7 @@ import './favorites.css';
 
 export default function FavoritesBlock() {
     const items = useSelector(state => state.favorites.itemsInFavorites);
-    console.log(items)
+
     return (
         <div className='favorites'>
             <h2 className="favorites-title">Избранное({items.length})</h2>

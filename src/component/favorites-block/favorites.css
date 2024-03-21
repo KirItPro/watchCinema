@@ -3,7 +3,8 @@ display: grid;
 color: rgb(228, 216, 216);
 text-align: center;
 }
-.favorites-list {       display: grid;
+.favorites-list {       
+    display: grid;
     justify-content: center;
     grid-template-columns: 190px 190px 190px 190px;
     gap: 5px;
@@ -17,4 +18,23 @@ text-align: center;
 .favorites-null {
     display: flex;
     justify-content: center;
+}
+@media (max-width: 810px) {
+    .favorites-list {
+        grid-template-columns: 190px 190px 190px;
+    }
+    .favorites-film {
+        margin: 0;
+    }
+
+}
+@media (max-width: 610px) {
+    .favorites-list {
+        grid-template-columns: 190px 190px;
+    }
+}
+@media (max-width: 410px) {
+    .favorites-list {
+        grid-template-columns: 47vw 47vw;
+    }
 }

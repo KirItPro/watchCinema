@@ -2,7 +2,7 @@ import ReactPlayer from 'react-player';
 import './promo.css';
 // import BG_VIDEO from '../../video/bg-video.mp4';
 
-const TRAILER = 'https://www.youtube.com/watch?v=sBU8ejvW6fM';
+const TRAILER = 'https://www.youtube.com/watch?v=fMNz-YApavw&t=11s';
 
 export default function Promo() {    
     return (
@@ -10,7 +10,6 @@ export default function Promo() {
             {/* <video src={BG_VIDEO} autoPlay muted loop className='promo-video'></video> */}
             <ReactPlayer
                 className="promo-video"
-                controls={true}
                 width='98vw'
                 height='120%'
                 loop={true}

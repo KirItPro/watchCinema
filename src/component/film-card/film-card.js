@@ -30,7 +30,7 @@ export default function FilmFavorites({ dataFilm }) {
                     className="films-list_item-img" />
             </Link>
             <p className="films-list_item-title">{data.title}</p>
-            <p className="films-list_item-year">{data.year}</p>
+            <p className="films-list_item-year">{data.year} год</p>
             <Button
                 type={isItemInFavorites ? 'disable' : 'enable'}
                 onClick={handleClick}

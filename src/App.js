@@ -10,7 +10,7 @@ import FilmInfo from './component/filmInfo/FilmInfo';
 import Login from './component/login/login';
 
 function App() {
-  const dataURL = 'https://yts.mx/api/v2/list_movies.json';  
+  const dataURL = 'https://yts.mx/api/v2/list_movies.json?limit=50';  
   const[dataMovies, setMovies] = useState(null);
 
   useEffect(() => {

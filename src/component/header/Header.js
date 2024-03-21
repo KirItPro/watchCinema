@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Login from '../login/login';
 import './header.css';
 
 export default function Header() {
