@@ -16,7 +16,7 @@ function FilmInfo() {
                     backgroundColor: 'gray'
                 }}>
                 <div className="film-left-part">
-                    <h2>{film.title_long}</h2>
+                    <h2 className='film-title'>{film.title_long}</h2>
                     <p className="film-synopsis">{film.synopsis.length > 600 ? film.synopsis.slice(0, 600)+' ...' : film.synopsis}</p>
                     <div className="film-rating">{'Рейтинг: ' + film.rating}</div>
                     <div className="film-genres">{'Жанр: ' + film.genres.join(', ')}</div>
@@ -28,8 +28,8 @@ function FilmInfo() {
             <ReactPlayer
                 className="film-play"
                 controls={true}
-                width='900px'
-                height='570px'
+                width='80vw'
+                height='60vh'
                 url={TRAILER} 
             />
         </div>

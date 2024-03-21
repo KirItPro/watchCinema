@@ -1,7 +1,7 @@
 .films-list {
     display: grid;
     justify-content: center;
-    grid-template-columns: 190px 190px 190px 190px;
+    grid-template-columns: 182px 182px 182px 182px;
     gap: 5px;
   }
   .film-list_item {
@@ -61,12 +61,12 @@
   }
   @media (max-width: 810px) {
     .films-list {
-      grid-template-columns: 190px 190px 190px;
+      grid-template-columns: 182px 182px 182px;
     }
   }
   @media (max-width: 610px) {
     .films-list {
-      grid-template-columns: 190px 190px;
+      grid-template-columns: 182px 182px;
     }    
     .films-list_item-title {
       margin-bottom: 5px; 
@@ -74,7 +74,7 @@
   }
   @media (max-width: 410px) {
     .films-list_item-img {
-      width: 45.3vw;
+      width: 46.5vw;
       height: 200px;
       padding: 2px;
     }

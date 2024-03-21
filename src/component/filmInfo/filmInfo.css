@@ -4,8 +4,12 @@
     display: grid;
     justify-content: center;
 }
+.film-title {
+    font-size: 25px;
+    margin-left: 10px;
+}
 .film-info {
-    height: 90vh;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     background-position: right;
@@ -21,12 +25,13 @@
     background: linear-gradient(to right,  rgba(56, 55, 55, 0.749) 50%, rgba(68, 68, 68, 0) 90%);
 }
 .film-rating {
-    margin-bottom: 10px;
+    margin: 0 0 10px 10px;
 }
 .film-genres {    
-    margin-bottom: 30px;
+    margin: 0 0 30px 10px;
 }
 .film-btn-download {
+    margin: 0 0 0 10px;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -52,6 +57,10 @@
     font-family: "Playfair Display", serif;
 }
 .film-play {
-    position: relative;
-    margin: 0 auto;
+    margin: 0 auto 50px;
+    border: 10px dashed rgb(92, 91, 91);
+    border-radius: 5px;
+}
+@media (max-width: 900px) {
+
 }
