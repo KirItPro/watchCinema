@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/watchCinema/static/css/main.1d11b3b6.css",
+    "main.css": "/watchCinema/static/css/main.31c614fa.css",
     "main.js": "/watchCinema/static/js/main.a0770d4a.js",
     "reactPlayerSoundCloud.js": "/watchCinema/static/js/reactPlayerSoundCloud.0c109aff.chunk.js",
     "reactPlayerVimeo.js": "/watchCinema/static/js/reactPlayerVimeo.7e9e3581.chunk.js",
@@ -17,7 +17,7 @@
     "static/media/promo.jpg": "/watchCinema/static/media/promo.815ede481c0f179a2c58.jpg",
     "static/media/spin.gif": "/watchCinema/static/media/spin.f3fee6639bf8d742ea86.gif",
     "index.html": "/watchCinema/index.html",
-    "main.1d11b3b6.css.map": "/watchCinema/static/css/main.1d11b3b6.css.map",
+    "main.31c614fa.css.map": "/watchCinema/static/css/main.31c614fa.css.map",
     "main.a0770d4a.js.map": "/watchCinema/static/js/main.a0770d4a.js.map",
     "reactPlayerSoundCloud.0c109aff.chunk.js.map": "/watchCinema/static/js/reactPlayerSoundCloud.0c109aff.chunk.js.map",
     "reactPlayerVimeo.7e9e3581.chunk.js.map": "/watchCinema/static/js/reactPlayerVimeo.7e9e3581.chunk.js.map",
@@ -33,7 +33,7 @@
     "reactPlayerPreview.33df7acd.chunk.js.map": "/watchCinema/static/js/reactPlayerPreview.33df7acd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d11b3b6.css",
+    "static/css/main.31c614fa.css",
     "static/js/main.a0770d4a.js"
   ]
 }
