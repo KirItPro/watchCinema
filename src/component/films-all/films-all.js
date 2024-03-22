@@ -3,27 +3,34 @@ import './films-all.css';
 import SPIN from '../../images/spin.gif';
 import FilmCard from '../film-card/film-card';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 export default function FilmsAll({ dataAllFilms }) {
-    const firstPage = dataAllFilms.slice(0, 8);
-    const [listFilms, setListFilms] = useState(firstPage);
-    const [page, setPage] = useState(8)
+    const [page, setPage] = useState(0);
+    const [btnPrevClass, setPrevBtnClass] = useState('none');
+    const [btnNextClass, setNextBtnClass] = useState('none');
+    useEffect(() => {
+        dataAllFilms ? setNextBtnClass('films-btn') : setNextBtnClass('none');
+        console.log('hhh')
+    },[dataAllFilms])
     function nextList(e) {
         e.preventDefault();
-        setPage(page + 8);
-        setListFilms(dataAllFilms.slice(page, page + 8));
+        setPage(page + 8);        
+        dataAllFilms.slice(page+8, page+16).length < 8 ? setNextBtnClass('none'): setNextBtnClass('films-btn');
+        setPrevBtnClass('films-btn');
     }
     function prevList(e) {
         e.preventDefault();
         setPage(page - 8);
-        setListFilms(dataAllFilms.slice(page - 8, page));
+        page <= 8 ? setPrevBtnClass('none'): setPrevBtnClass('films-btn');
+        setNextBtnClass('films-btn')
     }
+    
     return (
-
         <div className="films">
             <div className="films-list">
-                {listFilms ?
-                    listFilms.slice(0, 8).map(data => (
+                {dataAllFilms ? 
+                    dataAllFilms.slice(page, page+8).map(data => (
                         <FilmCard dataFilm={data} key={data.title} />)) :
                     <div className='films-spin'>
                         <p className='films-text_spin'>{'Загрузка...'}</p>
@@ -31,8 +38,8 @@ export default function FilmsAll({ dataAllFilms }) {
                     </div>}
             </div>
             <div className='films-btns'>
-                <button onClick={prevList} className={dataAllFilms[1].id == listFilms[1].id ? 'none' : 'films-btn prev'} >Назад</button>
-                <button onClick={nextList} className={listFilms.length < 8 ? 'none' : 'films-btn next'}>Дальше</button>
+                <button onClick={prevList} className={btnPrevClass}>Назад</button>
+                <button onClick={nextList} className={btnNextClass}>Дальше</button>
             </div>
         </div>
 

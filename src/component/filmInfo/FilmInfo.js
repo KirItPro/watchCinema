@@ -28,8 +28,8 @@ function FilmInfo() {
             <ReactPlayer
                 className="film-play"
                 controls={true}
-                width='80vw'
-                height='60vh'
+                width='90vw'
+                height='45vw'
                 url={TRAILER} 
             />
         </div>

@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <header className="header">
             <div className="header-menu">
-            <Link to='/' className="header-menu_button">Главная</Link>
+            <Link to='/watchCinema' className="header-menu_button">Главная</Link>
             <Link to='/all-films' className="header-menu_button">Фильмы</Link>
             <Link to='/favorites' className="header-menu_button">Избранное(<div className='header-menu_button__count'>{items.length}</div>)</Link>
             <Link to='/login' className="header-menu_button login_button" >Вход</Link>

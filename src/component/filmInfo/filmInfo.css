@@ -10,6 +10,7 @@
 }
 .film-info {
     width: 100vw;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
     background-position: right;
@@ -61,6 +62,44 @@
     border: 10px dashed rgb(92, 91, 91);
     border-radius: 5px;
 }
-@media (max-width: 900px) {
-
+@media (max-width: 610px) {
+    .film-info {
+        height: 60vh;
+    }
+    .film-left-part {
+        font-size: 12px;
+    }
+    .film-btn-download {
+        padding: 0;
+        width: 150px;
+        font-size: 18px;
+    }
+    .filv-video_title {
+        font-size: 28px;
+    }
+    .film-poster {
+        display: none;
+    }
+    .film-genres {    
+        margin: 0 0 10px 10px;
+    }
+    .film-play {
+        width: 100px;        
+        border: 5px dashed rgb(92, 91, 91);
+    }
+}
+@media (max-width: 340px) {
+    .film-title {
+        font-size: 20px;
+        margin: 10px auto 10px 10px;
+    }
+    .filv-video_title {
+        font-size: 22px;
+    }
+    .film-play {
+        height: 20px
+    }
+    .film-btn-download {
+        font-size: 15px;
+    }
 }
