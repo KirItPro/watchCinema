@@ -8,15 +8,18 @@ export default function FavoritesBlock() {
 
     return (
         <div className='favorites'>
-            <h2 className="favorites-title">Избранное({items.length})</h2>
-            <div className="favorites-list">
+            <div className='favorites-block'>
+                <h2 className="favorites-title">Избранное({items.length})</h2>
                 {items.length ?
-                    items.map(film =>
-                        <div className="favorites-film" key={film.id}>
-                            <FilmFavorites dataFilm={film} />
-                        </div>) :
-                    <span className="favorites-null">Пусто</span>}
+                    <div className="favorites-list">
+                        {items.map(film =>
+                            <div className="favorites-film" key={film.id}>
+                                <FilmFavorites dataFilm={film} />
+                            </div>
+                        )}
+                    </div> : <span className="favorites-null">Пусто</span>}
             </div>
         </div>
+
     )
 }

@@ -1,8 +1,9 @@
 form {
+    height: 80vh;
     display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
     justify-items: center;
-    align-items: center;
-    padding-top: 20%;
+    align-content: center;
     gap: 10px;
     color: rgb(202, 197, 197);
 }
@@ -15,5 +16,6 @@ input{
     background-color: rgba(237, 240, 243, 0.878);
 }
 .login-btn {
+    height: 20px;
     width: 60px;
 }

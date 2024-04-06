@@ -23,7 +23,7 @@ function App() {
       })
   }, []);
   return (
-    <>
+    <div className='app'>
       <Header />
       <Routes>
         <Route path='/watchCinema' element={<>
@@ -37,7 +37,7 @@ function App() {
         <Route path='/login' element={<Login />} />
       </Routes>
       <Footer/>
-    </>
+    </div>
   );
 }
 

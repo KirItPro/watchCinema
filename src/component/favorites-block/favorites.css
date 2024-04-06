@@ -1,9 +1,12 @@
 .favorites {
-display: grid;
-color: rgb(228, 216, 216);
-text-align: center;
+    min-height: 80vh;
 }
-.favorites-list {       
+.favorites-block {
+    display: grid;
+    color: rgb(228, 216, 216);
+    text-align: center;
+}
+.favorites-list {
     display: grid;
     justify-content: center;
     grid-template-columns: 190px 190px 190px 190px;
@@ -13,12 +16,12 @@ text-align: center;
     display: flex;
     margin: 10px;
     color: rgb(228, 216, 216);
-
 }
 .favorites-null {
     display: flex;
     justify-content: center;
 }
+
 @media (max-width: 810px) {
     .favorites-list {
         grid-template-columns: 190px 190px 190px;
@@ -26,7 +29,6 @@ text-align: center;
     .favorites-film {
         margin: 0;
     }
-
 }
 @media (max-width: 610px) {
     .favorites-list {
