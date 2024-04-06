@@ -17,10 +17,13 @@ function FilmInfo() {
                 }}>
                 <div className="film-left-part">
                     <h2 className='film-title'>{film.title_long}</h2>
-                    <p className="film-synopsis">{film.synopsis.length > 600 ? film.synopsis.slice(0, 600)+' ...' : film.synopsis}</p>
+                    <p className="film-synopsis">{film.synopsis.length > 600
+                        ? film.synopsis.slice(0, 600)+' ...'
+                        : film.synopsis}</p>
                     <div className="film-rating">{'Рейтинг: ' + film.rating}</div>
                     <div className="film-genres">{'Жанр: ' + film.genres.join(', ')}</div>
-                    <Link className="film-btn-download" to={film.torrents[1].url} >СКАЧАТЬ</Link>
+                    {console.log(film.torrents)}
+                  <Link className="film-btn-download" to={film.torrents[0].url} >СКАЧАТЬ</Link> 
                 </div>
                 <img className="film-poster" src={film.medium_cover_image} alt='poster' />
             </div>
@@ -30,7 +33,7 @@ function FilmInfo() {
                 controls={true}
                 width='90vw'
                 height='45vw'
-                url={TRAILER} 
+                url={TRAILER}
             />
         </div>
     )

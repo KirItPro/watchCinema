@@ -7,6 +7,7 @@ import Promo from './component/promo/Promo';
 import FavoritesBlock from './component/favorites-block/favorites';
 import FilmInfo from './component/filmInfo/FilmInfo';
 import Login from './component/login/login';
+import Footer from './component/footer/footer';
 
 function App() {
   const dataURL = 'https://yts.mx/api/v2/list_movies.json?limit=50';
@@ -16,7 +17,6 @@ function App() {
     axios.get(dataURL)
       .then(responce => {
         setMovies(responce.data.data.movies);
-        // console.log(responce.data.data.movies)
       })
       .catch((error) => {
         console.error('Ошибка здесь!' + error)
@@ -36,6 +36,7 @@ function App() {
         <Route path='/favorites' element={<FavoritesBlock />} />
         <Route path='/login' element={<Login />} />
       </Routes>
+      <Footer/>
     </>
   );
 }

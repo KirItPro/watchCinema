@@ -12,36 +12,38 @@ export default function FilmsAll({ dataAllFilms }) {
     useEffect(() => {
         dataAllFilms ? setNextBtnClass('films-btn') : setNextBtnClass('none');
         console.log('hhh')
-    },[dataAllFilms])
+    }, [dataAllFilms])
     function nextList(e) {
         e.preventDefault();
-        setPage(page + 8);        
-        dataAllFilms.slice(page+8, page+16).length < 8 ? setNextBtnClass('none'): setNextBtnClass('films-btn');
+        setPage(page + 8);
+        dataAllFilms.slice(page + 8, page + 16).length < 8 ? setNextBtnClass('none') : setNextBtnClass('films-btn');
         setPrevBtnClass('films-btn');
     }
     function prevList(e) {
         e.preventDefault();
         setPage(page - 8);
-        page <= 8 ? setPrevBtnClass('none'): setPrevBtnClass('films-btn');
+        page <= 8 ? setPrevBtnClass('none') : setPrevBtnClass('films-btn');
         setNextBtnClass('films-btn')
     }
-    
+
     return (
-        <div className="films">
-            <div className="films-list">
-                {dataAllFilms ? 
-                    dataAllFilms.slice(page, page+8).map(data => (
-                        <FilmCard dataFilm={data} key={data.title} />)) :
-                    <div className='films-spin'>
-                        <p className='films-text_spin'>{'Загрузка...'}</p>
-                        <img src={SPIN} alt='spin' />
-                    </div>}
-            </div>
+        <main>
+            {dataAllFilms ?
+                <div className="films">
+                    <div className="films-list">
+                        {dataAllFilms.slice(page, page + 8).map(data => (
+                            <FilmCard dataFilm={data} key={data.title} />))}
+                    </div>
+                </div>
+                :
+                <div className='films-spin'>
+                    <p className='films-text_spin'>{'Загрузка...'}</p>
+                    <img src={SPIN} alt='spin' />
+                </div>}
             <div className='films-btns'>
                 <button onClick={prevList} className={btnPrevClass}>Назад</button>
                 <button onClick={nextList} className={btnNextClass}>Дальше</button>
             </div>
-        </div>
-
+        </main>
     )
 }
