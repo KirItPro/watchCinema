@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/watchCinema/static/css/main.716de376.css",
-    "main.js": "/watchCinema/static/js/main.51702a49.js",
+    "main.css": "/watchCinema/static/css/main.d5bfa07d.css",
+    "main.js": "/watchCinema/static/js/main.dc7d90d9.js",
     "reactPlayerSoundCloud.js": "/watchCinema/static/js/reactPlayerSoundCloud.0c109aff.chunk.js",
     "reactPlayerVimeo.js": "/watchCinema/static/js/reactPlayerVimeo.7e9e3581.chunk.js",
     "reactPlayerFacebook.js": "/watchCinema/static/js/reactPlayerFacebook.c1b1062b.chunk.js",
@@ -17,8 +17,8 @@
     "static/media/promo.jpg": "/watchCinema/static/media/promo.815ede481c0f179a2c58.jpg",
     "static/media/spin.gif": "/watchCinema/static/media/spin.f3fee6639bf8d742ea86.gif",
     "index.html": "/watchCinema/index.html",
-    "main.716de376.css.map": "/watchCinema/static/css/main.716de376.css.map",
-    "main.51702a49.js.map": "/watchCinema/static/js/main.51702a49.js.map",
+    "main.d5bfa07d.css.map": "/watchCinema/static/css/main.d5bfa07d.css.map",
+    "main.dc7d90d9.js.map": "/watchCinema/static/js/main.dc7d90d9.js.map",
     "reactPlayerSoundCloud.0c109aff.chunk.js.map": "/watchCinema/static/js/reactPlayerSoundCloud.0c109aff.chunk.js.map",
     "reactPlayerVimeo.7e9e3581.chunk.js.map": "/watchCinema/static/js/reactPlayerVimeo.7e9e3581.chunk.js.map",
     "reactPlayerFacebook.c1b1062b.chunk.js.map": "/watchCinema/static/js/reactPlayerFacebook.c1b1062b.chunk.js.map",
@@ -33,7 +33,7 @@
     "reactPlayerPreview.33df7acd.chunk.js.map": "/watchCinema/static/js/reactPlayerPreview.33df7acd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.716de376.css",
-    "static/js/main.51702a49.js"
+    "static/css/main.d5bfa07d.css",
+    "static/js/main.dc7d90d9.js"
   ]
 }
